@@ -2,9 +2,11 @@
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace DataAccess.Concrete
+namespace DataAccessLayer.Concrete
 {
     public class Context : DbContext
     {
@@ -14,4 +16,5 @@ namespace DataAccess.Concrete
         public DbSet<Heading> Headings { get; set; }
         public DbSet<Writer> Writers { get; set; }
     }
+
 }

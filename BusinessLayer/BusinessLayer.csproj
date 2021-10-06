@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EA00B83D-3064-47D7-96B2-286DDE665FA3}</ProjectGuid>
+    <ProjectGuid>{35B086C1-4F34-4A13-857C-DF93671E4E5C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EntityLayer</RootNamespace>
-    <AssemblyName>EntityLayer</AssemblyName>
+    <RootNamespace>BusinessLayer</RootNamespace>
+    <AssemblyName>BusinessLayer</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -51,13 +51,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Concrete\About.cs" />
-    <Compile Include="Concrete\Category.cs" />
-    <Compile Include="Concrete\Contact.cs" />
-    <Compile Include="Concrete\Content.cs" />
-    <Compile Include="Concrete\Heading.cs" />
-    <Compile Include="Concrete\Writer.cs" />
+    <Compile Include="Concrete\CategoryManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{41923202-B590-4DFF-9C47-AC30B8FC539E}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EntityLayer\EntityLayer.csproj">
+      <Project>{EA00B83D-3064-47D7-96B2-286DDE665FA3}</Project>
+      <Name>EntityLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

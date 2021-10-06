@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace DataAccess.Abstract
+namespace DataAccessLayer.Abstract
 {
     public interface IRepository<T>
     {
@@ -13,4 +15,5 @@ namespace DataAccess.Abstract
         void Update(T entity);
         void Delete(T entity);
     }
+
 }

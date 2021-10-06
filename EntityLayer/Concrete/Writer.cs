@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace EntityLayer.Concrete
 {
@@ -22,5 +24,6 @@ namespace EntityLayer.Concrete
         public string WriterPassword { get; set; }
         public ICollection<Heading> Headings { get; set; }
         public ICollection<Content> Contents { get; set; }
+
     }
 }
