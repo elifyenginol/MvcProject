@@ -1,12 +1,12 @@
 # MVC PROJE KAMPI
 
-![Çıktı](https://github.com/elifyenginol/McvProjectCamp/blob/master/McvPrpjectKampi/Views/Statistic/statictics.png)
-![Çıktı](https://github.com/elifyenginol/McvProjectCamp/blob/master/McvPrpjectKampi/SS/ss.png)
+![Çıktı]https://github.com/elifyenginol/MvcProject/blob/master/WebMVC/Views/Statictics/statictics.PNG)
+
 
 ---
 
 
-## Yapılanlar
+## Tamamlanan Sertifika Görevleri
 
 Birinci Sertifika görevi tamamlandı. <br/>
 * Ana Katmanlar oluşturuldu (Business,Entity,Data Access)
