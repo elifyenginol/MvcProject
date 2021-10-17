@@ -1,6 +1,6 @@
 # MVC PROJE KAMPI
 
-![Çıktı]https://github.com/elifyenginol/MvcProject/blob/master/WebMVC/Views/Statictics/statictics.PNG)
+![Çıktı](https://github.com/elifyenginol/MvcProject/blob/master/WebMVC/Views/Statictics/statictics.PNG)
 
 
 ---
