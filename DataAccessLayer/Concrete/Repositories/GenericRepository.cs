@@ -1,11 +1,11 @@
-﻿using DataAccessLayer.Abstract;
+﻿using DataAccess.Concrete;
+using DataAccessLayer.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace DataAccessLayer.Concrete.Repositories
 {
@@ -39,10 +39,20 @@ namespace DataAccessLayer.Concrete.Repositories
             return _object.ToList();
         }
 
+        public List<T> GetAll(Expression<Func<T, bool>> filter)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Update(T entity)
         {
+
             context.SaveChanges();
         }
-    }
 
+        T IRepository<T>.Get(Expression<Func<T, bool>> filter)
+        {
+            return _object.SingleOrDefault(filter);
+        }
+    }
 }

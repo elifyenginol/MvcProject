@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<h2>İSTATİSLİKLER</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 mt-3 mr-6">
+            <div class="card text-white bg-primary mb-3" style="width:300px;height:200px">
+                <div class="card-body">
+                    <h1>@ViewBag.categoryCount</h1>
+                    <p class="card-text" style="font-size:30px">Toplam Kategori Sayısı</p>
+                </div>
+            </div>
+        </div>
+        <div class=" col-md-4 mt-3 mr-4">
+            <div class="card text-white bg-secondary mb-3" style="width:300px;height:200px">
+                <div class="card-body">
+                    <h1>@ViewBag.heading</h1>
+                    <p class="card-text" style="font-size:28px">Başlık Tablosunda "Yazılım" Kategorisine Ait Başlık Sayısı</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mt-3 mr-4">
+            <div class="card text-white bg-success mb-3" style="width:300px;height:200px">
+                <div class="card-body">
+                    <h1>@ViewBag.writer</h1>
+                    <p class="card-text" style="font-size:29px">Yazar Adında 'A' Harfi Geçen Yazar Sayısı</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 mt-3 mr-4">
+            <div class="card text-white bg-danger mb-3" style="width:300px;height:200px">
+                <div class="card-body">
+                    <h1>@ViewBag.headingMax</h1>
+                    <p class="card-text" style="font-size:30px">En Fazla Başlığa Sahip Kategori Adı</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mt-3 mr-4">
+            <div class="card text-white bg-warning mb-3" style="width:300px;height:200px">
+                <div class="card-body">
+                    <h1>@ViewBag.Status</h1>
+                    <p class="card-text" style="font-size:29px">Durumu True Olanlar İle False Olanlar Arasındaki Fark</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
